@@ -62,10 +62,15 @@ func parseMemorySection(memSect *Section) *MemorySection {
 	if memCnt != 1 {
 		log.Fatal("there should be just one memory")
 	}
+    // fixed maxMemory flag (set to 1 if there is fixed upper limit)
 	maxMem, p := read128UlebSize(rdr)
 	pOff += p
 	memPages, p := read128UlebSize(rdr)
 	pageOffset := memSect.RawOffset + int64(pOff)
+    // read fixed maximal memory if maxMemory flag is 1
+    if maxMem == 1 {
+        maxMem, _ = read128UlebSize(rdr)
+    }
 	return &MemorySection{memCnt, maxMem, memPages, pageOffset, p}
 }
 
