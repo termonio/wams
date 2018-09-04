@@ -15,7 +15,7 @@ The initial results are both impressive and exciting but there are some pitfalls
 - `wams file.wasm`
 	- displays the initial memory size in 64KB pages and the file offset of the memory section in `file.wasm`
 
-- `wams file.wasm -pages 2048 -write file.wasm`
+- `wams -pages 2048 -write file.wasm`
 	- patches the memory section in `file.wasm` to 2048 64KB pages
 
 ### Notes
