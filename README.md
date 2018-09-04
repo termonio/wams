@@ -21,3 +21,9 @@ The initial results are both impressive and exciting but there are some pitfalls
 ### Notes
 
 As of today (September 2018), reducing the number of pages did not suffice to run Go generated `.wasm` files on Android. The tested devices could allocate about 7500 pages but about 11000 pages were required to instantiate a small Go generated `.wasm` binary. However, the tool might be of use for other toochains when experimenting with initial page sizes.
+
+## Resouces
+
+- [Binary Encoding in WebAssembly Modules](https://github.com/WebAssembly/design/blob/master/BinaryEncoding.md)
+- [WebAssembly Modules](https://webassembly.github.io/spec/core/binary/modules.html)
+- [WebAssembly Future Features](https://webassembly.org/docs/future-features/

@@ -83,8 +83,8 @@ func getMemorySection(file string) *MemorySection {
 
 	readPreamble(rdr)
 	for {
-		s := readSection(rdr)
-		if s == nil {
+        var s *Section
+		if s = readSection(rdr); s == nil {
 			break
 		}
 		if s.Id == 5 {
