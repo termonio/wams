@@ -26,4 +26,4 @@ As of today (September 2018), reducing the number of pages did not suffice to ru
 
 - [Binary Encoding in WebAssembly Modules](https://github.com/WebAssembly/design/blob/master/BinaryEncoding.md)
 - [WebAssembly Modules](https://webassembly.github.io/spec/core/binary/modules.html)
-- [WebAssembly Future Features](https://webassembly.org/docs/future-features/
+- [WebAssembly Future Features](https://webassembly.org/docs/future-features/)
